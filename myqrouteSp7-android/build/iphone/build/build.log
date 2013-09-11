@@ -1,0 +1,76 @@
+================================================================================
+Appcelerator Titanium Diagnostics Build Log
+The contents of this file are useful to send to Appcelerator Support if
+reporting an issue to help us understand your environment, build settings
+and aid in debugging. Please attach this log to any issue that you report.
+================================================================================
+
+Starting build at 07/13/13 13:24
+
+Build details:
+
+   timestamp=04/15/13 18:45
+   module_apiversion=2
+   version=3.1.0
+   githash=57634ef
+
+
+Script arguments:
+   /Library/Application Support/Titanium/mobilesdk/osx/3.1.0.GA/iphone/builder.py
+   run
+   /Users/ivanjimenezutiel/myqroutetoledo/myqrouteSp7-android
+
+Building from: /Library/Application Support/Titanium/mobilesdk/osx/3.1.0.GA/iphone
+Platform: Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386
+
+Xcode path is: /Developer
+
+[INFO] Detected third-party module: ti.barcode/1.8.1[INFO] Detected third-party module: ti.barcode/1.8.1
+githash=57634ef, existing_git_hash=57634ef
+writing contents of /Users/ivanjimenezutiel/myqroutetoledo/myqrouteSp7-android/build/iphone/project.xcconfig:
+
+TI_VERSION=3.1.0.GA
+TI_SDK_DIR=/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
+TI_APPID=es.punkapp.myqrouteSp10and
+OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
+OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) -weak_framework iAd
+#include "module"
+
+old contents
+
+
+Generated the following stylecode code:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>classes</key>
+		<dict>
+</dict>
+
+		<key>classes_density</key>
+		<dict>
+</dict>
+
+		<key>ids</key>
+		<dict>
+</dict>
+
+		<key>ids_density</key>
+		<dict>
+</dict>
+
+		<key>tags</key>
+		<dict>
+</dict>
+
+		<key>tags_density</key>
+		<dict>
+</dict>
+
+	</dict>
+</plist>
++ Detected plugin: ti.alloy/1.0
++ Loading compiler plugin at /Users/ivanjimenezutiel/myqroutetoledo/myqrouteSp7-android/plugins/ti.alloy/plugin.py
+Finishing build

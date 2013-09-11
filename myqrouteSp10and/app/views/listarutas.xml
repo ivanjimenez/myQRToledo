@@ -1,0 +1,28 @@
+<Alloy>
+ 
+    <Window id="listaRutas" backgroundColor="#abc" barImage="/images/bar.png">
+       
+         
+        <TableView id="table" headerTitle="Rutas" dataCollection="rutas" dataFunction="updateUi" dataTransform="transformData" >
+            <!--SearchBar id="search" barColor="#000" showCancel="true" /-->
+                <TableViewRow id="row" hasChild="true" hasDetail="true" leftImage = "{imageURL}" >
+                	
+                     
+                     <Label id="name" text="{upperCaseName}" detail="true"/>
+                     <Label id="direction" text="{longitud}"/>
+                
+                </TableViewRow>
+            
+        </TableView>
+        <View  top="0" backgroundImage="/images/bar.png" height=50 / >
+ 
+          
+                <Button id="Mapa" title="Mapa" top=0 right=0 width=100 height=50 borderRadius=10 backgroundImage="/images/barNoLogo.png" borderWidth=3/>     
+        
+
+           
+       
+    </Window>
+   
+
+</Alloy>

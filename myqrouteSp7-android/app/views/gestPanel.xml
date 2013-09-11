@@ -1,0 +1,17 @@
+<Alloy>
+	
+	   <Window id="winPanel" modal="false" backgroundImage='/images/gradientBackground.png' barImage="/images/bar.png" >
+        
+		
+		<Button id="scan" top="250">Scan</Button>
+		
+		<Label left='0px' top='100'>Longitud</Label>
+		<TextArea id='txtLon' top='100' width='150' right='50px'/>
+		<Label left='0px'top='150'>Latitud</Label>
+		<TextArea id='txtLat' top='150' width='150' right='50px'/>
+		<Label left='0px'top='0'>Modelo</Label> 
+		<TextArea id='txtModelo' />
+    
+</Window>
+
+</Alloy>

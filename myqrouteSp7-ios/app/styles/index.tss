@@ -1,0 +1,22 @@
+".container": {
+	backgroundColor: "white"
+},
+"#Tab1" : {
+
+	
+	icon : '/images/captured.png'
+},
+"#label1": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: '40dp',
+		fontWeight: 'bold'
+	},
+	center:'0dp',
+	color: 'white',
+	bottom: '10dp'
+},
+"#tabgroup" : {
+	backgroundImage: '/images/tab1.jpg'
+}

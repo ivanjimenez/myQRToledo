@@ -1,0 +1,25 @@
+<Alloy>
+<Window id="mapa" >
+       
+   <View top="0" width=Ti.UI.FILL height="50" backgroundImage="/images/bar.png"> 
+   </View>
+                   
+                    <WebView id="webview" url="/localtile/local_tiles.html" top="50" borderWidth=5 boderRadius=4/> 
+                     <Toolbar platform="ios" bottom="0" borderTop="true" borderBottom="false" barColor="transparent" backgroundImage="/images/barNoLogo.png">
+
+                      <!-- The Items tag sets the Toolbar.items property. -->
+                      <Items>
+                            <Button id="coor" width="40" height="40" backgroundImage="/images/001.png" />
+                          <FlexSpace />
+                            <Button id="idioma" width="40" height="40" backgroundImage="/images/011.png" />
+                          <FlexSpace />                                                                       <Button id="Ruta" width="40" height="40" backgroundImage="/images/032.png" /> 
+                                                 
+                      </Items>
+                      <!-- Place additional views for the Toolbar here. -->
+
+                  </Toolbar>
+                                                
+               
+        </Window>
+    
+</Alloy>

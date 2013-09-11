@@ -1,0 +1,15 @@
+<Alloy>
+    <Model src="rutas" id="locModel" instance="true" />
+    <Window id="winruta1" backgroundColor="white" barImage="/images/bar.png" fullscreen="false" width="200" heigh="300" >
+      <ImageView id="imageURL" image="{$.locModel.imageURL}" top="0"/>
+      <Label id="name_lbl" text="{$.locModel.name}" ></Label>
+     
+      <Label id="desc_lbl" text="{$.locModel.desc}" bottom="0"></Label>
+ 
+      <View id="tbRuta" bottom="0" height="50" >  
+                         
+                          <Button id="comenzar" right="0" borderRadius="10" width="40" height="40" borderWidth="3" backgroundImage="/images/035.png" />
+       </View>                  
+                     
+    </Window>
+</Alloy>

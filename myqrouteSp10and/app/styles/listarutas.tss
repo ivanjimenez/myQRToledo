@@ -1,0 +1,45 @@
+"#listaRutas" :{
+
+    backgroundColor:"transparent",
+	backgroundImage:'/images/gradientBackground.png'
+},
+"#row": {
+	height: '50dp',
+
+	
+},
+"#table" : {
+	width:'90%',
+	height:'85%',
+	top:45,
+	backgroundColor:'transparent'
+
+},
+
+"#view" : {
+	borderRadius: "10dp"
+},
+
+
+"#direction" : {
+	
+ font:{
+		fontSize:12,
+		fontWeight:'bold'
+	},
+	color:'black',
+	top:60,
+	right:0
+	
+},
+
+"#name": {
+	font:{
+		fontSize:42,
+		fontWeight:'bold'
+	},
+	color:'black',
+	top:0,
+	right:0
+	
+}

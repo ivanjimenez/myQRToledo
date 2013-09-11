@@ -1,0 +1,15 @@
+<Alloy>
+   
+            <Window id="win2" title="Toledo Monumental" backgroundColor="red">
+                <TableView id="table2">
+                	 <TableViewRow title="Bisagra"/>
+                	 <TableViewRow title="Plaza de Zocodover"/>
+                	 <TableViewRow title="El Alcázar"/>
+                	 <TableViewRow title="Tornerías"/>
+                	 <TableViewRow title="Teatro de Rojas"/>
+                	 <TableViewRow title="Cristo de la Luz"/>
+            
+        		</TableView>
+            </Window>
+     
+</Alloy>

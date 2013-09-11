@@ -1,0 +1,15 @@
+<Alloy>
+   
+
+        <AlertDialog id="dialog" title="Leer Panel"
+            message="¿Desee Leer el Panel?" cancel="1">
+
+            <!-- The ButtonNames tag sets the buttonNames property. -->
+            <ButtonNames>
+                <ButtonName>Leer Panel</ButtonName>
+                <ButtonName>Cancel</ButtonName>
+                <ButtonName>Help</ButtonName>
+            </ButtonNames>
+        </AlertDialog>
+  
+</Alloy>

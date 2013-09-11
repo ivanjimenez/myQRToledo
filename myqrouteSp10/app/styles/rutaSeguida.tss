@@ -1,0 +1,34 @@
+"#window" :{
+
+    backgroundColor:"transparent",
+	backgroundImage:'/images/gradientBackground.png'
+},
+"#row": {
+	height: '50dp',
+
+	
+},
+"#table" : {
+	width:'90%',
+	height:'85%',
+	top:45,
+	backgroundColor:'transparent'
+
+},
+
+"#view" : {
+	borderRadius: "10dp"
+},
+
+
+
+"#name": {
+	font:{
+		fontSize:12,
+		fontWeight:'bold'
+	},
+	color:'black',
+	top:0,
+	left:75,
+	height:Ti.UI.SIZE
+}

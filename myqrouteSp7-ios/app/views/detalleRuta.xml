@@ -1,0 +1,24 @@
+<Alloy>
+    <Model src="rutas" id="locModel" instance="true" />
+    <Window id="winRuta" barImage="/images/bar.png" >
+      <ImageView id="imageURL" image="{$.locModel.imageURL}" top="0"/>
+      <Label id="nameLabel" text="{$.locModel.name}" ></Label>
+     
+      <Label id="descLabel" text="{$.locModel.desc}" bottom="0"></Label>
+ 
+        <Toolbar id="toolbarRuta" platform="ios" bottom="0" opacity=0.5 barColor="transparent" backgroundImage="/images/barNoLogo.png" >
+
+                      <!-- The Items tag sets the Toolbar.items property. -->
+                      <Items>
+                        
+                           <FlexSpace/>
+                          <Button id="comenzar" title="COMENZAR" toucheEnabled="true"/>
+                          <FlexSpace>
+                         
+                      </Items>
+
+                      <!-- Place additional views for the Toolbar here. -->
+
+                  </Toolbar>
+    </Window>
+</Alloy>

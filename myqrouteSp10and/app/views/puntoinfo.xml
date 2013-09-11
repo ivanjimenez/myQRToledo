@@ -1,0 +1,39 @@
+<Alloy>
+	<TabGroup id="tabgroupInfo">
+		<Tab id="Tab1" title="Mapa">
+   		<Window id="mapa" title="Ruta Actual" >
+                    <Switch id="basicSwitch" value="true" top="20"/>
+                 
+                    <WebView url="/localtile/local_tiles.html"/>
+                     <Toolbar platform="ios" bottom="0" borderTop="true" borderBottom="false">
+
+                      <!-- The Items tag sets the Toolbar.items property. -->
+                      <Items>
+                          <Button id="coor" title="Ubícame" style="Ti.UI.iPhone.SystemButtonStyle.DONE" />
+                          <FlexSpace/>
+                          <Button id="camera" systemButton="Ti.UI.iPhone.SystemButton.CAMERA" />
+                         
+                          <Button id="siguiente" title="Siguiente" style="Ti.UI.iPhone.SystemButtonStyle.DONE" />
+                         
+                          <Button id="panel" title="Leer Panel" style="Ti.UI.iPhone.SystemButtonStyle.DONE" />
+                      </Items>
+
+                      <!-- Place additional views for the Toolbar here. -->
+                  </Toolbar>      
+                                
+               
+        </Window>
+    </Tab>
+    <Tab id="tab2" title="Lista">
+    <Window >
+
+      <Require src="rutaseguida" />
+      
+       
+    </Window>
+</Tab>
+</TabGroup>
+
+
+            
+</Alloy>

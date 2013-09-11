@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="winDialog" fullscreen='false'>
+    
+    <AlertDialog id="dialog" title="panel" style=Ti.UI.iPhone.AlertDialogStyle.PLAIN_TEXT_INPUT
+            message="¿Debe aproximarse a un panel" cancel="1"> 
+
+            <!-- The ButtonNames tag sets the buttonNames property. -->
+            <ButtonNames>
+                <ButtonName>QR</ButtonName>
+                <ButtonName>Cancel</ButtonName>
+                <ButtonName>Help</ButtonName>
+            </ButtonNames>
+        </AlertDialog>
+
+	</Window>
+</Alloy>

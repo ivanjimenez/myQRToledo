@@ -1,0 +1,19 @@
+"#winPanel" : {
+
+ backgroundImage: '/images/barNoLogo.png'
+
+},
+
+"#scan" : {
+	top: 20,
+	height: 100,
+	backgroundColor: '#abd'
+},
+
+"#txtModelo" : {
+	top : 0,
+	width : 250,
+	right : '0px',
+	//[{"id":0,"id_loc":0}]
+	font: {fontSize:20, fontWeight:'bold'}
+}

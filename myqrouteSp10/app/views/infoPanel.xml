@@ -1,0 +1,24 @@
+<Alloy>
+    <Model src="rutas" id="panelModel" instance="true" />
+	<Window id="vidWin" barImage="/images/bar.png">
+        <VideoPlayer id="videoPlayer" ns="Ti.Media" top="0" height="200" width=Ti.UI.FILL autoplay="false"  accessibilityValue="Puerta del Sol" url="{$.panelModel.video}"/>
+        
+         <WebView id="webPanel" borderWidth="2" borderColor="#bbb" borderRadius="5"
+            color="#888" textAlign="left" 
+            top="200" width=Ti.UI.FILL height=Ti.UI.FILL id="txtPanel" url="{$.panelModel.legend}"/>
+          <Toolbar platform="ios" bottom="0"   barColor="transparent" >
+
+            <!-- The Items tag sets the Toolbar.items property. -->
+            <Items>
+                <Button id="cancel" systemButton="Ti.UI.iPhone.SystemButton.CANCEL" />
+                <FlexSpace/>
+                <Button id="camera" systemButton="Ti.UI.iPhone.SystemButton.CAMERA" />
+                <FlexSpace/>
+                <Button id="siguiente" title="Siguiente" style="Ti.UI.iPhone.SystemButtonStyle.DONE" />
+            </Items>
+
+            <!-- Place additional views for the Toolbar here. -->
+
+        </Toolbar>
+    </Window>
+</Alloy>

@@ -1,0 +1,40 @@
+".container": {
+	backgroundColor: "white"
+},
+"#Tab1" : {
+
+	
+	icon : '/images/captured.png'
+},
+"#label1": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: '40dp',
+		fontWeight: 'bold'
+	},
+	center:'0dp',
+	color: 'white',
+	bottom: '10dp'
+},
+"#tabgroup" : {
+	backgroundImage: '/images/tab1.jpg'
+},
+
+"#toolbar" : {
+	 backgroundColor :"white",
+	 height: 40,
+	 borderWidth : 2,
+	 boderRadius : 20,
+	 opacity : 0.5,
+	 backgroundColor: "orange",
+	 backgroundGradient: {
+        type: 'radial',
+        startPoint: { x: 50, y: 50 },
+        endPoint: { x: 50, y: 50 },
+        colors: [ 'orange', 'white'],
+        startRadius: '90%',
+        endRadius: 0,
+        backfillStart: true
+    }
+}

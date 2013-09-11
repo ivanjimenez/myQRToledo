@@ -1,0 +1,15 @@
+<Alloy>
+		<Collection src="paneles" />
+		<Window id="window" title="Lista de Puntos">
+			
+			<!-- use the global reference to the dataCollection -->
+			<TableView id="table" dataCollection="rutas">
+				
+				<TableViewRow id="row"><Label id="name" text="{name}"/>
+			    </TableViewRow>
+			</TableView>
+
+			
+		</Window>
+	
+</Alloy>

@@ -1,0 +1,28 @@
+<Alloy>
+	
+<Window id="mapa" >
+       
+   <View top="0" width=Ti.UI.FILL height="50" backgroundImage="/images/bar.png" > 
+   </View>
+                    <Label>Puerta del Sol</Label>
+                    <WebView id="webview" url="/localtile/local_tiles.html" top="50" borderWidth=5 boderRadius=4/> 
+                    
+                     <View  id="toolbar" bottom="0" >
+
+
+                            <Button bottom="0" id="coor" left=5 width=40 height=40 borderRadius=10 borderWidth=3 backgroundImage='/images/001.png'/>
+                      
+                            <Button bottom="0" id="idioma" backgroundImage='/images/011.png' right=160 width=40 height=40  borderRadius=10  borderWidth=3 />
+                                     
+                      
+                            <Button bottom="0" id="Ruta" backgroundImage='/images/032.png' right=5 width=40 height=40 borderRadius=10 borderWidth=3  /> 
+                                                 
+
+                     </View>
+
+                   
+                              
+               
+        </Window>
+    
+</Alloy>

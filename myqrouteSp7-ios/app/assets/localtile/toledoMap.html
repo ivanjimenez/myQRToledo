@@ -1,0 +1,167 @@
+<html>
+<head>
+    <title>OSM Local Tiles</title>
+    <script>
+            
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- bring in the OpenLayers javascript library
+         (here we bring it from the remote site, but you could
+         easily serve up this javascript yourself) -->
+    <script src="OpenLayers.lib"></script>
+ 
+    <!-- bring in the OpenStreetMap OpenLayers layers.
+         Using this hosted file will make sure we are kept up
+         to date with any necessary changes -->
+    <script src="OpenStreetMap.lib"></script>
+ 
+    <script type="text/javascript">
+        // Start position for the map (hardcoded here for simplicity)
+        var lat=39.85362;
+        var lon=-4.023228;
+
+        //Evento para Ubicación por GPS
+        Ti.App.addEventListener("app:fromTitanium", function(e) {
+             
+             //coordenadas pasadas
+             lat=e.lon;
+             lon=e.lat;
+           
+             var panel = "Estoy aquí";
+             
+                lonLat = new OpenLayers.LonLat(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject());
+                var size = new OpenLayers.Size(21,25);
+                var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
+                var icon = new OpenLayers.Icon('img/marker-gold.png', size, offset);
+                marker = new OpenLayers.Marker(lonLat,icon);
+                markerLayer.addMarker(marker,icon);
+                popup = new OpenLayers.Popup.FramedCloud(null,
+                                       marker.lonlat,
+                                       null,
+                                       "<div style='background-color:white; width:10;height:10'>"+panel+"</div>",null,true,null);
+
+                    map.addPopup(popup);
+                    map.setCenter (lonLat, 18);
+
+            
+            
+            });
+
+    //Evento del primer punto del panel
+
+        Ti.App.addEventListener("app:panelCero", function(e) {
+
+             lat=e.lon;
+             lon=e.lat;
+           
+             var panel = e.nombrePanel;
+             
+                lonLat = new OpenLayers.LonLat(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject());
+                var size = new OpenLayers.Size(21,25 );
+                var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
+                var icon = new OpenLayers.Icon('img/marker-gold.png', size, offset);
+                marker = new OpenLayers.Marker(lonLat,icon);
+                markerLayer.addMarker(marker,icon);
+                popup = new OpenLayers.Popup.FramedCloud("Panel",
+                                       marker.lonlat,
+                                       size,
+                                       '<div style=color:#000000 align=left><button type=button>'+panel+'</button></div><div align=left><img src=img/qr.png width=25 height=25 /></div>',null,true);
+
+                   
+                var clickPopup = function(e){
+
+                              
+                   
+                   Ti.App.fireEvent('app:leerPanel');
+                 
+                }
+
+                popup.events.register('click',popup, clickPopup);
+
+                
+
+                map.addPopup(popup);
+                map.setCenter (lonLat, 18);
+                     
+
+
+        });
+
+
+
+        var zoom=14;
+        var markerLayer;
+        var newLayer;
+        var lonLat;
+ 
+        var map; //complex object of type OpenLayers.Map
+
+                
+
+        
+       
+        //Initialise the 'map' object
+        function init() {
+            
+             var projLonLat   = new OpenLayers.Projection("EPSG:4326");   // WGS 1984
+                var projMercator = new OpenLayers.Projection("EPSG:900913"); // Spherical Mercator
+         
+                var extentMax = 20037508.34;
+         
+                var overviewMap = new OpenLayers.Control.OverviewMap();
+         
+                var scale = new OpenLayers.Control.ScaleLine();
+                scale.geodesic = true; // get the scale projection right, at least on small zoom levels
+                    
+          map = new OpenLayers.Map ("map", {
+                controls:[
+                    new OpenLayers.Control.Navigation(),
+                    new OpenLayers.Control.PanZoomBar(),
+                    
+                    new OpenLayers.Control.MousePosition()],                    
+                   
+                maxExtent: new OpenLayers.Bounds(-4.0833531588689747, 
+        39.847883093998227, 
+        -3.9642062233409607, 
+        39.875739054339533),
+                maxResolution: 156543.0339,
+                numZoomLevels: 18,
+                units: 'm',
+                projection: new OpenLayers.Projection("EPSG:900913"),
+                displayProjection: new OpenLayers.Projection("EPSG:4326")
+            } );
+         
+            // This is the layer that uses the locally stored tiles
+            var newLayer = new OpenLayers.Layer.OSM("Local Tiles", "tiles/${z}/${x}/${y}.png", {numZoomLevels: 16});
+            map.addLayer(newLayer);
+            // This is the end of the layer    
+ 
+            var lonLat = new OpenLayers.LonLat(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject());
+          
+
+              //  map.setCenter (lonLat, 15);
+                markerLayer = new OpenLayers.Layer.Markers("Markers");
+                map.addLayer(markerLayer);
+                
+
+
+               map.setCenter (lonLat, 14);
+    }
+
+       
+
+ 
+    </script>
+
+</head>
+ 
+<!-- body.onload is called once the page is loaded (call the 'init' function) -->
+<body onload="init();">
+ 
+    <!-- define a DIV into which the map will appear. Make it take up the whole window -->
+    <div style="width:100%; height:100%" id="map"></div>
+
+ 
+</body>
+ 
+</html>

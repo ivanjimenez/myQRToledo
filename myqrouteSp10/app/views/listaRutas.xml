@@ -1,0 +1,33 @@
+<Alloy>
+ 
+    <Window id="listaRutas" backgroundColor="#abc" barImage="/images/bar.png" >
+        <NavigationGroup id="nav" platform="ios" >
+            <Window barImage="/images/bar.png">
+        <TableView id="table" headerTitle="Rutas" dataCollection="rutas" dataFunction="updateUi" dataTransform="transformData" >
+            <!--SearchBar id="search" barColor="#000" showCancel="true" /-->
+                <TableViewRow id="row" hasChild="true" hasDetail="true" leftImage = "{imageURL}" >
+                	<ImageView id="view">
+
+                     
+                     <Label id="name" text="{upperCaseName}" detail="true"/>
+                     <Label id="direction" text="{longitud}"/>
+                    </ImageView>
+
+                </TableViewRow>
+            
+        </TableView>
+        <Toolbar platform="ios" top="0" borderTop="true" borderBottom="false" backgroundImage="/images/barNoLogo.png" barColor="transparent">
+
+            <!-- The Items tag sets the Toolbar.items property. -->
+            <Items>
+                <Button id="Mapa" right="0" width="40" height="40" backgroundImage="/images/041.png" />     
+            </Items>
+
+            <!-- Place additional views for the Toolbar here. -->
+
+        </Toolbar>
+    </Window>
+    </NavigationGroup>
+    </Window>
+
+</Alloy>

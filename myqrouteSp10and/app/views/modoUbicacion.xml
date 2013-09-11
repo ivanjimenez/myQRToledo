@@ -1,0 +1,15 @@
+<Alloy>
+   
+
+        <AlertDialog id="modoDialog" title="Ubicación"
+            message="¿Cómo quieres ubicarte?" cancel="2">
+
+            <!-- The ButtonNames tag sets the buttonNames property. -->
+            <ButtonNames>
+                <ButtonName>GPS</ButtonName>
+                <ButtonName>Panel</ButtonName>
+                <ButtonName>Cancelar</ButtonName>
+            </ButtonNames>
+        </AlertDialog>
+
+</Alloy>

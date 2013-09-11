@@ -1,0 +1,5 @@
+// this is a generated file - DO NOT EDIT
+
+TI_BARCODE_OTHER_LDFLAGS=$(inherited) -liconv
+
+OTHER_LDFLAGS=$(inherited) $(TI_BARCODE_OTHER_LDFLAGS) 

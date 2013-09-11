@@ -1,0 +1,14 @@
+<Alloy>
+
+        <OptionDialog id="idioma" title="Selección de Idioma" destructive="3" cancel="2">
+            <Options>
+                <Option>Español</Option>
+                <Option>English</Option>
+                <Option>cancel</Option>
+               
+            </Options>
+     
+           
+        </OptionDialog>
+       
+</Alloy>

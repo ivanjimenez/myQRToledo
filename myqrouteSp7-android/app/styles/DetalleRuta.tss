@@ -1,0 +1,55 @@
+"#winruta1" : {
+	 backgroundColor:"transparent",
+	backgroundImage:'/images/gradientBackground.png'
+
+},
+
+"#imageURL" : {
+	top:35,
+	width: Ti.UI.FILL
+	//image : "/images/ruta0.png"
+},
+
+"#name_lbl" : {
+	top: "0dp",
+
+		textAlign:'center',
+		font: {
+			fontWeight:'bold',
+			fontSize:24
+		},
+		color: '#fff',
+		height:Ti.UI.SIZE
+},
+"#desc_lbl" : {
+	top: "80dp",
+	 width:'90%',
+	height:'85%',
+	color : 'black',
+	font: {
+			fontWeight:'bold',
+			fontSize:14
+		},
+	backgroundColor:'transparent'
+	//html: '<p>Una de nuestras rutas, junto a Toledo Siniestro: casas y lugares encantados</p>'
+	//value: "Paseo por la judería toledana visitando los espaciós que han sido rehabilitados y puestos en valor por el Consorcio: restos arqueológicos de la Sinagoga del Sofer y la Casa del Judío, además de la visita a la Sinagoga del Tránsito y Roca Tarpeya." 
+},
+
+"#tbRuta" : {
+	 backgroundColor :"white",
+	 height: 40,
+	 borderWidth : 2,
+	 boderRadius : 20,
+	 opacity : 0.5,
+	 backgroundColor: "orange",
+	 backgroundGradient: {
+        type: 'radial',
+        startPoint: { x: 50, y: 50 },
+        endPoint: { x: 50, y: 50 },
+        colors: [ 'orange', 'white'],
+        startRadius: '90%',
+        endRadius: 0,
+        backfillStart: true
+    }
+}
+

@@ -1,0 +1,10 @@
+<Alloy>
+<Tab id="tab2" title="Lista">
+    <Window >
+
+      <Require src="rutaseguida" />
+      
+       
+    </Window>
+</Tab>
+</Alloy>

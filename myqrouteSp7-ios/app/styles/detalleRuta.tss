@@ -1,0 +1,48 @@
+"#winruta1" : {
+	 backgroundColor:"transparent",
+	backgroundImage:'/images/gradientBackground.png'
+
+},
+"#imageURL" : {
+	top:0,
+	width: Ti.UI.FILL,
+	borderWidth: 3,
+	borderRadius: 20
+	//image : "/images/ruta0.png"
+},
+
+"#nameLabel" : {
+	top: "0dp",
+
+		textAlign:'center',
+		font: {
+			fontWeight:'bold',
+			fontSize:24
+		},
+		color: '#fff',
+		height:Ti.UI.SIZE
+},
+"#descLabel" : {
+	top: "200dp",
+	 width:'100%',
+	height:'20%',
+	font: {
+			fontWeight:'bold',
+			fontSize:14
+		},
+	borderWidth: 3,
+	borderRadius: 20,
+	backgroundColor:'white',
+	opacity : 0.8,
+	 backgroundColor: "orange",
+	 backgroundGradient: {
+        type: 'radial',
+        startPoint: { x: 50, y: 50 },
+        endPoint: { x: 50, y: 50 },
+        colors: [ 'orange', 'white'],
+        startRadius: '90%',
+        endRadius: 0,
+        backfillStart: true
+    } 
+}
+
